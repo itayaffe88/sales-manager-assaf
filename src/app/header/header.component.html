@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>Saffi's Sales Manager</span>
+      <span class="example-spacer"></span>
+      <button [matMenuTriggerFor]="menu" mat-icon-button class="menu-icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="navigate('')">Sales</button>
+        <button mat-menu-item (click)="navigate('trainers')">Trainers</button>
+        <button mat-menu-item (click)="navigate('products')">Products</button>
+      </mat-menu>
+    </mat-toolbar-row>
+    </mat-toolbar>
